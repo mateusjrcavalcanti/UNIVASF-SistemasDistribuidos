@@ -1,225 +1,31 @@
 [
 {
-    "model": "tcc.user",
-    "pk": 1,
-    "fields": {
-        "password": "pbkdf2_sha256$390000$CqmAyP2VG73Ja2BiDJP1nL$VFIbaPtYRbEvJ9jI+XCCOGh5mYJb7gCvtV6cxWhqo/U=",
-        "last_login": "2023-02-27T14:25:49.504Z",
-        "is_superuser": true,
-        "username": "admin",
-        "first_name": "",
-        "last_name": "Sobrenome",
-        "email": "admin@email.com",
-        "is_staff": true,
-        "is_active": true,
-        "date_joined": "2023-02-27T07:44:38.344Z",
-        "titulo": null,
-        "groups": [],
-        "user_permissions": []
-    }
-},
-{
-    "model": "tcc.user",
-    "pk": 2,
-    "fields": {
-        "password": "pbkdf2_sha256$390000$5Cr25HY7kQjFsOwgQx84vm$UlGofTaytBcQYDAUXmTpN3cobXwsYg3q7jeQQ/L4ocY=",
-        "last_login": "2023-02-27T21:49:43.532Z",
-        "is_superuser": false,
-        "username": "OrientadorUm",
-        "first_name": "Orientador Um",
-        "last_name": "Sobrenome",
-        "email": "",
-        "is_staff": false,
-        "is_active": true,
-        "date_joined": "2023-02-27T19:27:02Z",
-        "titulo": "Prof. Dr.",
-        "groups": [
-            1
-        ],
-        "user_permissions": []
-    }
-},
-{
-    "model": "tcc.user",
-    "pk": 3,
-    "fields": {
-        "password": "pbkdf2_sha256$390000$vXeNt37HziL556FqUAAsDS$LKU7Jd5/ehJNoXaXCrhE1nauOV18Vh7YWFGyYxyV/CU=",
-        "last_login": "2023-02-27T21:19:27.887Z",
-        "is_superuser": false,
-        "username": "OrientadorDois",
-        "first_name": "Orientador Numero Dois",
-        "last_name": "Sobrenome",
-        "email": "",
-        "is_staff": false,
-        "is_active": true,
-        "date_joined": "2023-02-27T19:34:22Z",
-        "titulo": "Prof. Dr.",
-        "groups": [
-            1
-        ],
-        "user_permissions": []
-    }
-},
-{
-    "model": "tcc.user",
-    "pk": 4,
-    "fields": {
-        "password": "pbkdf2_sha256$390000$xQUy3tiu3Fir3574zPF93g$5v16Pc85vMTasOm/w2VELKW8cGzzVCOFcdXubVoFuOU=",
-        "last_login": null,
-        "is_superuser": false,
-        "username": "AvaliadorUm",
-        "first_name": "Avaliador Um",
-        "last_name": "Sobrenome",
-        "email": "",
-        "is_staff": false,
-        "is_active": true,
-        "date_joined": "2023-02-27T19:36:09Z",
-        "titulo": "Prof. Dr.",
-        "groups": [
-            1
-        ],
-        "user_permissions": []
-    }
-},
-{
-    "model": "tcc.user",
-    "pk": 5,
-    "fields": {
-        "password": "pbkdf2_sha256$390000$AOvpQeenDzWregy7sJOpCL$FxU3ubjfOUZKqZABYYyaeXT2nee9YYsXfVOTGOInNvc=",
-        "last_login": null,
-        "is_superuser": false,
-        "username": "AvaliadorDois",
-        "first_name": "Nome do Avaliador Dois",
-        "last_name": "Sobrenome",
-        "email": "",
-        "is_staff": false,
-        "is_active": true,
-        "date_joined": "2023-02-27T19:36:35Z",
-        "titulo": "Prof. Dr.",
-        "groups": [
-            1
-        ],
-        "user_permissions": []
-    }
-},
-{
-    "model": "tcc.user",
-    "pk": 6,
-    "fields": {
-        "password": "pbkdf2_sha256$390000$VFijiyGjmobrknkC8b9csH$FAHuwrZJWz3EO1B9ImIv5aeGuN0NbXAihZFaxaAGfe0=",
-        "last_login": null,
-        "is_superuser": false,
-        "username": "AvaliadorTres",
-        "first_name": "Nome do Avaliador Numero Tres",
-        "last_name": "Sobrenome",
-        "email": "",
-        "is_staff": false,
-        "is_active": true,
-        "date_joined": "2023-02-27T19:37:01Z",
-        "titulo": "Prof. Dr.",
-        "groups": [
-            1
-        ],
-        "user_permissions": []
-    }
-},
-{
-    "model": "tcc.user",
-    "pk": 7,
-    "fields": {
-        "password": "pbkdf2_sha256$390000$L9SZo1xpvVro7dfWEOyhvC$VJ9JNwkiJrR5+fGQwZRy1PhQWuChAZWoDRvC5vZuBro=",
-        "last_login": null,
-        "is_superuser": false,
-        "username": "AvaliadorSup",
-        "first_name": "Nome Avaliador Suplente",
-        "last_name": "Sobrenome",
-        "email": "",
-        "is_staff": false,
-        "is_active": true,
-        "date_joined": "2023-02-27T19:37:17.146Z",
-        "titulo": "Prof. Dr.",
-        "groups": [
-            1
-        ],
-        "user_permissions": []
-    }
-},
-{
-    "model": "tcc.user",
-    "pk": 8,
-    "fields": {
-        "password": "pbkdf2_sha256$390000$pAtA27tvHR7luBTAnGB6wQ$1uyxm1BDuTKmcuSnhqZGy9wOKWwHr9pmnqOLw3CZPV8=",
-        "last_login": "2023-02-27T19:55:43.045Z",
-        "is_superuser": false,
-        "username": "AlunoUm",
-        "first_name": "Aluno Zero Um",
-        "last_name": "Sobrenome",
-        "email": "",
-        "is_staff": false,
-        "is_active": true,
-        "date_joined": "2023-02-27T19:37:43Z",
-        "titulo": null,
-        "groups": [
-            2
-        ],
-        "user_permissions": []
-    }
-},
-{
-    "model": "tcc.user",
-    "pk": 9,
-    "fields": {
-        "password": "pbkdf2_sha256$390000$CiD4ZQUaAccxVoitylGhEn$1p+bW2DeamMvaKVL+JoxIolQ+lkK6VNAuzwfSqpaK7U=",
-        "last_login": "2023-02-27T21:35:12.321Z",
-        "is_superuser": false,
-        "username": "AlunoDois",
-        "first_name": "Aluno Zero Dois",
-        "last_name": "Sobrenome",
-        "email": "",
-        "is_staff": false,
-        "is_active": true,
-        "date_joined": "2023-02-27T19:37:55.150Z",
-        "titulo": null,
-        "groups": [
-            2
-        ],
-        "user_permissions": []
-    }
-},
-{
-    "model": "tcc.user",
-    "pk": 10,
-    "fields": {
-        "password": "pbkdf2_sha256$390000$kjJcD0zVycjICX6ZYlE3je$kyZWXdtgNI5w/nB8oS/qqe2TbGvsVXOxCC4H/knDw5c=",
-        "last_login": "2023-02-27T21:17:38.091Z",
-        "is_superuser": false,
-        "username": "Coordenador",
-        "first_name": "Coordenador Name",
-        "last_name": "Sobrenome",
-        "email": "",
-        "is_staff": false,
-        "is_active": true,
-        "date_joined": "2023-02-27T19:42:37Z",
-        "titulo": "Prof. Dr.",
-        "groups": [
-            1
-        ],
-        "user_permissions": []
-    }
-},
-{
     "model": "tcc.curso",
     "pk": 1,
     "fields": {
-        "nome": "Engenharia da Computação",
+        "nome": "Colegiado de Engenharia da computação",
         "sigla": "CECOMP"
+    }
+},
+{
+    "model": "tcc.horario",
+    "pk": 1,
+    "fields": {
+        "data": "2023-02-28T11:00:00Z"
+    }
+},
+{
+    "model": "tcc.horario",
+    "pk": 2,
+    "fields": {
+        "data": "2023-02-28T13:00:00Z"
     }
 },
 {
     "model": "tcc.semestre",
     "pk": 1,
     "fields": {
-        "coordenador": 10,
+        "coordenador": 5,
         "curso": 1,
         "ano": 2023,
         "numero": 1,
@@ -241,7 +47,7 @@
     "model": "tcc.semestre",
     "pk": 2,
     "fields": {
-        "coordenador": 10,
+        "coordenador": 5,
         "curso": 1,
         "ano": 2023,
         "numero": 2,
@@ -260,86 +66,218 @@
     }
 },
 {
-    "model": "tcc.horario",
+    "model": "tcc.trabalho",
     "pk": 1,
     "fields": {
-        "data": "2023-02-27T11:00:00Z"
-    }
-},
-{
-    "model": "tcc.horario",
-    "pk": 2,
-    "fields": {
-        "data": "2023-02-28T13:00:00Z"
-    }
-},
-{
-    "model": "tcc.horario",
-    "pk": 3,
-    "fields": {
-        "data": "2023-02-27T17:00:00Z"
+        "titulo": "Trabalho 01",
+        "tipo": "I",
+        "anteprojeto": "",
+        "discente": 2,
+        "orientador": null,
+        "semestre": 2,
+        "homologacao_orientador": false,
+        "homologacao_coordenador": false
     }
 },
 {
     "model": "tcc.trabalho",
-    "pk": 1,
-    "fields": {
-        "titulo": "Titulo TCC Aluno Zero Um",
-        "tipo": "I",
-        "anteprojeto": "",
-        "discente": 8,
-        "orientador": 3,
-        "semestre": 1,
-        "homologacao_orientador": true,
-        "homologacao_coordenador": true
-    }
-},
-{
-    "model": "tcc.trabalho",
-    "pk": 3,
-    "fields": {
-        "titulo": "Titulo",
-        "tipo": "I",
-        "anteprojeto": "",
-        "discente": 9,
-        "orientador": 2,
-        "semestre": 1,
-        "homologacao_orientador": true,
-        "homologacao_coordenador": true
-    }
-},
-{
-    "model": "tcc.banca",
     "pk": 2,
     "fields": {
-        "horario": 1,
-        "trabalho": 1,
-        "resultado": null,
+        "titulo": "Trabalho 02",
+        "tipo": "II",
+        "anteprojeto": "",
+        "discente": 2,
+        "orientador": null,
+        "semestre": 2,
         "homologacao_orientador": false,
-        "homologacao_coordenador": false,
-        "avaliadores": [
-            4,
-            5,
-            7
-        ],
-        "coorientadores": [],
-        "avaliacoesresult": []
+        "homologacao_coordenador": false
     }
 },
 {
-    "model": "tcc.banca",
+    "model": "tcc.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$pir4gGDrRcBBdjMHcwbGvc$xKgKZYYEK/F8hb5+CTQOawWsKohzF4JfCnbf21f0ITk=",
+        "last_login": "2023-02-28T08:52:39.084Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@email.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-02-28T08:18:40.296Z",
+        "titulo": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "tcc.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$WSZFhRQJCRmTV47qy0B9OJ$5Dz/ieKQGSmWVJeENN6Gr0StZvp4E9wJedQb1yrvEv4=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "AlunoUm",
+        "first_name": "Aluno UM",
+        "last_name": "Sobrenome",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-02-28T08:19:37Z",
+        "titulo": null,
+        "groups": [
+            2
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "tcc.user",
     "pk": 3,
     "fields": {
-        "horario": null,
-        "trabalho": 3,
-        "resultado": null,
-        "homologacao_orientador": false,
-        "homologacao_coordenador": false,
-        "avaliadores": [
-            7
+        "password": "pbkdf2_sha256$390000$GVdZxqYvGIZQTcVUJidmPa$dqfuqovjFepXBhrTq151jlc1TCxON2iZahvuRSqqiRQ=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "AlunoDois",
+        "first_name": "Segundo Aluno",
+        "last_name": "Sobrenome",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-02-28T08:20:17Z",
+        "titulo": "Prof. Dr.",
+        "groups": [
+            2
         ],
-        "coorientadores": [],
-        "avaliacoesresult": []
+        "user_permissions": []
+    }
+},
+{
+    "model": "tcc.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$PbOAPmvBLNffykbUgOnkfn$FMD60Mxuu4Drs5GGg80POA/xb54wRR4a86s4I0/cQ/I=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "AvaliadorUm",
+        "first_name": "Primeiro Nome",
+        "last_name": "Segundo Nome",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-02-28T08:20:32Z",
+        "titulo": "Prof. Dr.",
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "tcc.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$NYB3cMkGF3njniTfVXGXPS$DY46bDtPzrSwUB1HIEFKDMCsVghCt0PUcTuHT+uTsX0=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "Coordenador",
+        "first_name": "Nome do Coordenador",
+        "last_name": "Sobrenome",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-02-28T08:23:06Z",
+        "titulo": "Prof. Dr.",
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "tcc.user",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$ZWYgVq7GQtK7JLiL5Dsied$D/Yf6kKGlaFwR4XcfSovFF5RV0E1cZC2V5Xyo4rfBrQ=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "AvaliadorDois",
+        "first_name": "Segundo Avaliador",
+        "last_name": "Sobrenome",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-02-28T08:23:23Z",
+        "titulo": "Prof. Dr.",
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "tcc.user",
+    "pk": 7,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$S2AJ6tojq3TcIjglYnNEbq$dzGAY38aGRe6dF9FxakOYQvU4Jfq444HewTH8PlmXGU=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "AvaliadorSup",
+        "first_name": "Suplente",
+        "last_name": "Sobrenome",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-02-28T08:23:37Z",
+        "titulo": "Prof. Dr.",
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "tcc.user",
+    "pk": 8,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$Unxxn07gXWwyF820hLwmvA$8nD6aLE2irYWXFI5YO2YMkvcRSo3u/JnW1pOB83OsCM=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "OrientadorUm",
+        "first_name": "Primeiro Orientador",
+        "last_name": "Sobrenome",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-02-28T08:24:02Z",
+        "titulo": "Prof. Dr.",
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "tcc.user",
+    "pk": 9,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$uZNFhQh8GNrhlAiPZ1ZUir$5OYGH3RQCmbwAhBPuU4whk7xKNBMx/id+LcJ25fid0c=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "OrientadorDois",
+        "first_name": "Segundo Orientador",
+        "last_name": "Sobrenome",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-02-28T08:24:12Z",
+        "titulo": "Prof. Dr.",
+        "groups": [
+            1
+        ],
+        "user_permissions": []
     }
 }
 ]

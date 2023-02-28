@@ -21,4 +21,4 @@ class Command(BaseCommand):
                 self.stdout.write(self.style.SUCCESS(
                     "%s:" % file))
                 os.system(
-                    "python manage.py loaddata django_tcc/seed/%s" % file)
+                    "python -Xutf8 manage.py loaddata django_tcc/seed/%s" % file)

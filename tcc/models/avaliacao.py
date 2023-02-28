@@ -1,14 +1,16 @@
+import os
 from django.db import models
 from django.conf import settings
+from tcc.models import Banca
 
 
 def get_file_path_avaliacao(instance, filename):
-    return os.path.join('tcc', f'{instance.tcc.id}', filename)
+    return os.path.join('tcc', f'{instance.banca.trabalho.id}', filename)
 
 
 class Avaliacao(models.Model):
     avaliacao = models.FileField(
-        upload_to=get_file_path_avaliacao, null=True, blank=True)
+        upload_to=get_file_path_avaliacao, null=True)
 
     avaliador = models.ForeignKey(
         settings.AUTH_USER_MODEL,
@@ -16,8 +18,14 @@ class Avaliacao(models.Model):
         on_delete=models.CASCADE
     )
 
+    banca = models.ForeignKey(
+        Banca,
+        on_delete=models.SET_NULL,
+        null=True
+    )
+
     def __str__(self):
-        return f'{self.avaliador.get_full_name()} avaliou: {self.tcc.titulo} - {self.tcc.discente.get_full_name()}'
+        return f'{self.avaliador.get_full_name()} avaliou: {self.banca.trabalho.titulo} - {self.banca.trabalho.discente.get_full_name()}'
 
     class Meta:
         '''Meta definition for Post.'''

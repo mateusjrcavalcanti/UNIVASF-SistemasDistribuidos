@@ -3,7 +3,7 @@ from django.db import models
 from django.utils.translation import gettext as _
 from django.utils import timezone
 from django.conf import settings
-from tcc.models import Horario, Trabalho, Resultado, Avaliacao
+from tcc.models import Horario, Trabalho
 
 
 class Banca(models.Model):
@@ -32,19 +32,6 @@ class Banca(models.Model):
         Trabalho,
         on_delete=models.SET_NULL,
         null=True
-    )
-
-    resultado = models.OneToOneField(
-        Resultado,
-        on_delete=models.SET_NULL,
-        null=True,
-        blank=True
-    )
-
-    avaliacoesresult = models.ManyToManyField(
-        Avaliacao,
-        related_name='avaliacoesresult',
-        blank=True
     )
 
     homologacao_orientador = models.BooleanField(

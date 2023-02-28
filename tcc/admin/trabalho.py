@@ -2,6 +2,10 @@ from django.contrib import admin
 from django.db.models import Q
 from tcc.models import Trabalho
 
+from django.db.models.signals import post_save
+from django.dispatch import receiver
+from django.core.mail import send_mail
+
 
 @admin.register(Trabalho)
 class TrabalhoAdmin(admin.ModelAdmin):
@@ -65,3 +69,20 @@ class TrabalhoAdmin(admin.ModelAdmin):
                 form.base_fields["anteprojeto"].disabled = True
 
         return form
+
+
+class TransactionDetail(models.Model):
+    product = models.ForeignKey(Product)
+
+# method for updating
+
+
+@receiver(post_save, sender=TrabalhoAdmin, dispatch_uid="update_trabalho")
+def update_stock(sender, instance, **kwargs):
+    send_mail(
+        'That’s your subject',
+        'That’s your message body',
+        'from@yourdjangoapp.com',
+        ['to@yourbestuser.com'],
+        fail_silently=False,
+    )

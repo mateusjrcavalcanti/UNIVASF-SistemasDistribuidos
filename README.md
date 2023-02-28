@@ -16,15 +16,15 @@ python manage.py flush
 ```
 
 ```python
-python3 manage.py dumpdata auth.group --indent 4 > project/seed/0001_Group.json
-python3 manage.py dumpdata tcc --indent 4 > project/seed/0002_User.json
-python3 manage.py dumpdata tcc --indent 4 > project/seed/0003_Curso.json
-python3 manage.py dumpdata tcc --indent 4 > project/seed/0004_Semestre.json
-python3 manage.py dumpdata tcc --indent 4 > project/seed/0005_Horario.json
-python3 manage.py dumpdata tcc --indent 4 > project/seed/0006_Trabalho.json
-python3 manage.py dumpdata tcc --indent 4 > project/seed/0007_Banca.json
-python3 manage.py dumpdata tcc --indent 4 > project/seed/0008_Avaliacao.json
-python3 manage.py dumpdata tcc --indent 4 > project/seed/0009_Resultado.json
+python manage.py dumpdata auth.group --indent 4 > django_tcc/seed/0001_Group.json
+python manage.py dumpdata tcc --indent 4 > django_tcc/seed/0002_User.json
+python manage.py dumpdata tcc --indent 4 > django_tcc/seed/0003_Curso.json
+python manage.py dumpdata tcc --indent 4 > django_tcc/seed/0004_Semestre.json
+python manage.py dumpdata tcc --indent 4 > django_tcc/seed/0005_Horario.json
+python manage.py dumpdata tcc --indent 4 > django_tcc/seed/0006_Trabalho.json
+python manage.py dumpdata tcc --indent 4 > django_tcc/seed/0007_Banca.json
+python manage.py dumpdata tcc --indent 4 > django_tcc/seed/0008_Avaliacao.json
+python manage.py dumpdata tcc --indent 4 > django_tcc/seed/0009_Resultado.json
 
 python manage.py loaddata django_tcc/seed/*.json
 ```
